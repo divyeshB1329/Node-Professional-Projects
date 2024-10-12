@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="w-full flex flex-col items-center min-h-screen justify-center bg-[#F4EEE0]">
+        <div class="w-1/3 p-6 flex flex-col items-center justify-center text-white hover:border-4 bg-[#6D5D6E] h-[600px] rounded-xl border-[#393646]">
+            <h3 class="text-3xl mb-5 text-center pt-4 pb-5">Create Account</h3>
+            <form class="flex items-center justify-center flex-col  gap-10" action="/register" method="post">
+                <input class="placeholder-white w-full px-3 py-2 rounded-md outline-none bg-transparent border-2" type="text"
+                    placeholder="name" name="name">
+                <input class="placeholder-white w-full px-3 py-2 rounded-md outline-none bg-transparent border-2" type="text"
+                    placeholder="username" name="username">
+                <div class="w-full flex items-center justify-center gap-2">
+                    <input class=" placeholder-white -1/2 px-3 py-2 rounded-md outline-none bg-transparent border-2" type="email"
+                        placeholder="email" name="email">
+                    <input class="placeholder-white w-1/2 px-3 py-2 rounded-md outline-none bg-transparent border-2" type="password"
+                        placeholder="password" name="password">
+                </div>
+                <input class="placeholder-white w-full px-3 py-2 rounded-md outline-none bg-transparent border-2" type="number"
+                    placeholder="age" name="age">
+                <div class="w-full flex items-center justify-center gap-2">
+                    <a href="/login" class="w-1/2 px-3 py-2 cursor-pointer rounded-md bg-[#565269] text-center">Login
+                        Account</a>
+                    <input class="w-1/2  px-3 py-2 cursor-pointer rounded-md bg-[#393646] border border-black" type="submit"
+                        value="Create Account">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
